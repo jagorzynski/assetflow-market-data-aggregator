@@ -22,4 +22,6 @@ public class MarketData {
   private String currency;
   private String source;
   private LocalDateTime timestamp;
+  private BigDecimal marketCap;
+  private BigDecimal volume24h;
 }

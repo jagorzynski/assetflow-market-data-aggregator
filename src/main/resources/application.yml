@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: assetflow-market-data-aggregator
+  data:
+    mongodb:
+      uri: mongodb://sothrose:sothrose@localhost:27017/assetflow
+      database: assetflow
+
+mongock:
+  enabled: true

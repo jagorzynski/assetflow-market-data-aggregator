@@ -23,7 +23,7 @@ public class MarketDataController {
   @GetMapping(path = "/single", produces = APPLICATION_JSON_VALUE)
   public Mono<MarketData> getSingleCryptoPrice(
       @RequestParam String symbol, @RequestParam String currency) {
-    return marketDataService.fetchSingleCryptoPrice(symbol, currency);
+    return marketDataService.fetchAndCacheCryptoData(symbol, currency);
   }
 
   @GetMapping(path = "/multiple", produces = APPLICATION_JSON_VALUE)

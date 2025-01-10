@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    config:
+      enabled: false
+
+  server:
+    port: 8081
+
+mongock:
+  enabled: true
+
+logging:
+  level:
+    root: DEBUG

@@ -3,3 +3,9 @@ spring:
     name: assetflow-market-data-aggregator
   profiles:
     active: ${SPRING_PROFILES_ACTIVE:dev}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "env,configprops"
